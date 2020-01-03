@@ -1,0 +1,33 @@
+<template>
+    <div>
+        <NavComponent
+            :title="title"
+            :isSearch="isSearch"
+            :navBackground="navBackground"
+            :navTitleColor="navTitleColor"
+        ></NavComponent>
+    </div>
+</template>
+
+<script>
+export default {
+    data() {
+        return {
+            // 这些都可以自己去试试玩，不要局限
+            title: '自定义头部',
+            isSearch: false,
+            navBackground: '#fff',
+            navTitleColor: '#000'
+        }
+    }
+}
+</script>
+
+
+<config>
+{
+    usingComponents: {
+        "NavComponent": "../frame/components/nav"
+    },
+}
+</config>
